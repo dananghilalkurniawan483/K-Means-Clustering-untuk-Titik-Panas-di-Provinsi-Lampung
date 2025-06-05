@@ -67,6 +67,7 @@ Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Pro
 |-------------------------------|--------------|------------------|
 | ![map](https://github.com/user-attachments/assets/0ce9ff37-ae56-4292-ac48-bc2fdd7c1f40) | ![elbow](https://github.com/user-attachments/assets/5cc940ef-b2b8-49b8-a99f-a9d09da58b5e) | ![silhouette](https://github.com/user-attachments/assets/40bd6d36-1039-4011-ac68-d3699a3a37fd) |
 
+
 ## 📁 Struktur Folder
 project-root/
 ├── titik_panas_indonesia_1_tahun.csv     # Dataset utama
