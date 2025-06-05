@@ -1,4 +1,4 @@
-![download (5)](https://github.com/user-attachments/assets/93caec63-fed6-43c4-8a7a-0829985c1051)# 🔥 K-Means Clustering untuk Titik Panas di Provinsi Lampung
+🔥 K-Means Clustering untuk Titik Panas di Provinsi Lampung
 
 Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Provinsi **Lampung, Indonesia**, selama periode satu tahun. Analisis dilakukan menggunakan **metode K-Means Clustering** dengan visualisasi berbasis peta dan evaluasi metrik clustering.
 
@@ -48,6 +48,13 @@ Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Pro
 | Calinski-Harabasz Score| 651.2065 |
 
 > Nilai di atas bergantung pada hasil aktual model.
+
+## 🗺️ Contoh Visualisasi
+
+| Klaster Titik Panas di Lampung | Sebaran FRP Tiap Cluster |
+|-------------------------------|---------------------------|
+| !(https://github.com/user-attachments/assets/0ce9ff37-ae56-4292-ac48-bc2fdd7c1f40)
+)       | ![boxplot](path/to/boxplot.png) |
 
 ## 📁 Struktur Folder
 project-root/
