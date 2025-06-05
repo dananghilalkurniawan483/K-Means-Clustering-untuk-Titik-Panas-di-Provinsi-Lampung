@@ -51,10 +51,10 @@ Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Pro
 
 ## 🗺️ Contoh Visualisasi
 
-| Klaster Titik Panas di Lampung | Sebaran FRP Tiap Cluster |
-|-------------------------------|---------------------------|
-| !(https://github.com/user-attachments/assets/0ce9ff37-ae56-4292-ac48-bc2fdd7c1f40)
-)       | ![boxplot](path/to/boxplot.png) |
+| Klaster Titik Panas di Lampung |
+|-------------------------------|
+| ![map](https://github.com/user-attachments/assets/0ce9ff37-ae56-4292-ac48-bc2fdd7c1f40) |
+
 
 ## 📁 Struktur Folder
 project-root/
