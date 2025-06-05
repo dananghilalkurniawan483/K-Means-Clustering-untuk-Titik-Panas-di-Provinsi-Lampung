@@ -55,6 +55,15 @@ Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Pro
 |-------------------------------|--------------|------------------|
 | ![map](https://github.com/user-attachments/assets/0ce9ff37-ae56-4292-ac48-bc2fdd7c1f40) | ![elbow](https://github.com/user-attachments/assets/5cc940ef-b2b8-49b8-a99f-a9d09da58b5e) | ![silhouette](https://github.com/user-attachments/assets/40bd6d36-1039-4011-ac68-d3699a3a37fd) |
 
+## 📁 Struktur Folder
+project-root/
+│
+├── titik_panas_indonesia_1_tahun.csv
+├── GDAM/ # Shapefile wilayah Indonesia
+├── kmeans_lampung.py # Kode utama analisis
+├── hasil_klaster_lampung.csv # Output data dengan label klaster
+├── README.md
+
 ## 📌 Tujuan Proyek
 - Mengidentifikasi sebaran dan intensitas titik panas di Lampung
 - Mendukung pengambilan keputusan dalam pengawasan kebakaran hutan/lahan
