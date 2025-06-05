@@ -87,9 +87,4 @@ project-root/
 - Mendukung pengambilan keputusan dalam pengawasan kebakaran hutan/lahan
 - Menunjukkan bagaimana machine learning dapat diterapkan untuk analisis geospasial
 
-## 👤 Author
-**Danang Hilal Kurniawan**  
-Data Science | Geospatial | Machine Learning  
-[LinkedIn](https://www.linkedin.com/in/dananghilalkurniawan/)
-
 ---
