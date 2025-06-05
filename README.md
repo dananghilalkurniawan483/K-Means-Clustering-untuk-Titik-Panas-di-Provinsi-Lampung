@@ -48,17 +48,6 @@ Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Pro
 - Visualisasi hasil klaster di peta Lampung
 - Plot sebaran FRP tiap klaster:
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-sns.boxplot(data=df_lampung, x='cluster', y='frp')
-plt.title("Sebaran FRP berdasarkan Cluster")
-plt.xlabel("Cluster")
-plt.ylabel("FRP")
-plt.show()
-
-
 4. **Visualisasi Peta:**
    - Titik panas dikelompokkan berdasarkan klaster
    - Peta administratif Provinsi Lampung sebagai latar belakang
