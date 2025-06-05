@@ -1,40 +1,63 @@
-🔥 K-Means Clustering untuk Titik Panas di Provinsi Lampung
+# 🔥 K-Means Clustering untuk Titik Panas di Provinsi Lampung
 
 Proyek ini merupakan analisis spasial terhadap **titik panas (hotspots)** di Provinsi **Lampung, Indonesia**, selama periode satu tahun. Analisis dilakukan menggunakan **metode K-Means Clustering** dengan visualisasi berbasis peta dan evaluasi metrik clustering.
 
+---
+
 ## 📂 Dataset
-- **Sumber**: Dataset `titik_panas_indonesia_1_tahun.csv` berisi koordinat (latitude, longitude), confidence level (`low`, `nominal`, `high`), dan FRP (*Fire Radiative Power*).
-- **Filtering**: Data difilter berdasarkan batas geografis Provinsi Lampung.
+
+- **Sumber**: Dataset `titik_panas_indonesia_1_tahun.csv` berisi:
+  - Koordinat: `latitude`, `longitude`
+  - Confidence level: `low`, `nominal`, `high`
+  - `frp` (*Fire Radiative Power*)
+- **Filtering**: Data difilter berdasarkan batas geografis Provinsi Lampung menggunakan shapefile dari GADM.
+
+---
 
 ## 🔧 Teknologi dan Library
+
 - Python 3
-- `pandas`, `numpy` untuk manipulasi data
-- `matplotlib`, `seaborn` untuk visualisasi
-- `geopandas`, `shapely` untuk analisis spasial
-- `scikit-learn` untuk K-Means dan evaluasi klaster
-- Shapefile dari [GADM](https://gadm.org) untuk peta administratif Indonesia
+- `pandas`, `numpy` – manipulasi data
+- `matplotlib`, `seaborn` – visualisasi
+- `geopandas`, `shapely` – analisis spasial
+- `scikit-learn` – K-Means & evaluasi klaster
+- `contextily` (opsional) – menambahkan tile basemap
+
+---
 
 ## 📊 Analisis yang Dilakukan
 
-1. **Preprocessing:**
-   - Konversi label confidence (`l`, `n`, `h`) menjadi numerik (0, 1, 2)
-   - Standarisasi fitur: `latitude`, `longitude`, `confidence`, `frp`
+### 1. Preprocessing:
+- Konversi label `confidence`:  
+  `low` → 0, `nominal` → 1, `high` → 2
+- Standarisasi fitur:
+  - `latitude`
+  - `longitude`
+  - `confidence`
+  - `frp`
 
-2. **Pemilihan K Optimal:**
-   - Metode **Elbow**
-   - **Silhouette Score**
-   - Evaluasi tambahan: *Davies-Bouldin Index*, *Calinski-Harabasz Score*
+### 2. Pemilihan K Optimal:
+- **Elbow Method**
+- **Silhouette Score**
+- Evaluasi tambahan:
+  - *Davies-Bouldin Index*
+  - *Calinski-Harabasz Score*
 
-3. **Clustering:**
-   - Algoritma **K-Means**
-   - Visualisasi hasil klaster di peta Lampung
-   - Plot sebaran FRP tiap klaster:
-     ```python
-     import seaborn as sns
-     sns.boxplot(data=df_lampung, x='cluster', y='frp')
-     plt.title("Sebaran FRP berdasarkan Cluster")
-     plt.show()
-     ```
+### 3. Clustering:
+- Algoritma **K-Means** (dari `scikit-learn`)
+- Visualisasi hasil klaster di peta Lampung
+- Plot sebaran FRP tiap klaster:
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.boxplot(data=df_lampung, x='cluster', y='frp')
+plt.title("Sebaran FRP berdasarkan Cluster")
+plt.xlabel("Cluster")
+plt.ylabel("FRP")
+plt.show()
+
 
 4. **Visualisasi Peta:**
    - Titik panas dikelompokkan berdasarkan klaster
